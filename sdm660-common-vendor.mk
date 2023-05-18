@@ -752,6 +752,7 @@ PRODUCT_PACKAGES += \
     QCC-TR-UI \
     TimeService \
     CallFeaturesSetting \
+    PowerOffAlarm \
     ConfURIDialer \
     ConferenceDialer \
     DeviceInfo \
