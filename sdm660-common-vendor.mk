@@ -754,6 +754,7 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.constants@2.1 \
     CneApp \
     IWlanService \
+    SoterService \
     PowerOffAlarm \
     DeviceInfo \
     DynamicDDSService \
