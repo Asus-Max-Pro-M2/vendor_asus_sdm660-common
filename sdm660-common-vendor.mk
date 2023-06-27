@@ -420,6 +420,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
@@ -455,6 +461,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.mwqemadapter@1.0.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
@@ -642,6 +650,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
@@ -739,6 +753,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
+    vendor/asus/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
     vendor/asus/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
