@@ -17,6 +17,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+    vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
+    vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
+    vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/datachannellib.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/datachannellib.xml \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms-noship_product_privapp_permissions_qti.xml \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms.xml \
@@ -24,8 +28,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
+    vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
+    vendor/asus/sdm660-common/proprietary/system_ext/etc/permissions/vendor.qti.imsdcservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.imsdcservice.xml \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/seccomp_policy/sxraux-arm.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/sxraux-arm.policy \
     vendor/asus/sdm660-common/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
+    vendor/asus/sdm660-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/asus/sdm660-common/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/extractors/libmmparserextractor.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libadsprpc_system.so \
@@ -47,16 +54,29 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/system_ext/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.voiceprint@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.2.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.3.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.quicinc.cne.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.server@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.quicinc.cne.server@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.server@2.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.quicinc.cne.server@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.server@2.1.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/com.quicinc.cne.server@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.server@2.2.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/extractors/libmmparserextractor.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/fm_helium.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libadsprpc_system.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libavenhancements.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libbinauralrenderer_wrapper.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libbinauralrenderer_wrapper.qti.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcdsprpc_system.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/libdiag_system.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.qti.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmframework.so \
@@ -68,6 +88,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfm-hci.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libhoaeffects.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libhoaeffects.qti.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/libhoaeffects_csim.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libhoaeffects_csim.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/liblistenjni.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liblistenjni.qti.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/liblistensoundmodel2.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liblistensoundmodel2.qti.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/liblsmclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liblsmclient.so \
@@ -126,6 +148,15 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.am@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.2.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.3.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.4.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.5.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.6.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.7.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.8.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.1.so \
@@ -149,9 +180,27 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callcapability@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callinfo@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.configservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.configservice@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.configservice@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.configservice@1.1.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.connection@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.1.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@2.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@2.1.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.factory@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@2.2.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.1.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.1.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.latency@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.2.so \
+    vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.mstatservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.mstatservice@1.0.so \
     vendor/asus/sdm660-common/proprietary/system_ext/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/asus/sdm660-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/asus/sdm660-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -660,17 +709,27 @@ PRODUCT_PACKAGES += \
     DynamicDDSService \
     QtiTelephonyService \
     embms \
+    imssettings \
     uceShimService \
     dpmserviceapp \
+    ims \
     qcrilmsgtunnel \
     tcmclient \
     audiosphere \
     com.qti.dpmframework \
+    com.qualcomm.qti.imscmservice-V2.0-java \
+    com.qualcomm.qti.imscmservice-V2.1-java \
+    com.qualcomm.qti.imscmservice-V2.2-java \
+    com.qualcomm.qti.uceservice-V2.0-java \
+    com.qualcomm.qti.uceservice-V2.1-java \
+    com.qualcomm.qti.uceservice-V2.2-java \
+    com.qualcomm.qti.uceservice-V2.3-java \
     com.quicinc.cne.api-V1.0-java \
     com.quicinc.cne.api-V1.1-java \
     com.quicinc.cne.constants-V1.0-java \
     com.quicinc.cne.constants-V2.0-java \
     com.quicinc.cne.constants-V2.1-java \
+    datachannellib \
     dpmapi \
     embmslibrary \
     qcrilhook \
@@ -709,6 +768,27 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dpmservice-V1.1-java \
     vendor.qti.hardware.mwqemadapter-V1.0-java \
     vendor.qti.hardware.slmadapter-V1.0-java \
+    vendor.qti.ims.callcapability-V1.0-java \
+    vendor.qti.ims.callinfo-V1.0-java \
+    vendor.qti.ims.configservice-V1.0-java \
+    vendor.qti.ims.configservice-V1.1-java \
+    vendor.qti.ims.connection-V1.0-java \
+    vendor.qti.ims.datachannelservice-V1-java \
+    vendor.qti.ims.factory-V1.0-java \
+    vendor.qti.ims.factory-V1.1-java \
+    vendor.qti.ims.factory-V2.0-java \
+    vendor.qti.ims.factory-V2.1-java \
+    vendor.qti.ims.factory-V2.2-java \
+    vendor.qti.ims.rcsconfig-V1.0-java \
+    vendor.qti.ims.rcsconfig-V1.1-java \
+    vendor.qti.ims.rcsconfig-V2.0-java \
+    vendor.qti.ims.rcsconfig-V2.1-java \
+    vendor.qti.ims.rcssip-V1.0-java \
+    vendor.qti.ims.rcssip-V1.1-java \
+    vendor.qti.ims.rcssip-V1.2-java \
+    vendor.qti.ims.rcsuce-V1.0-java \
+    vendor.qti.ims.rcsuce-V1.1-java \
+    vendor.qti.ims.rcsuce-V1.2-java \
     vendor.qti.latency-V2.0-java \
     vendor.qti.latency-V2.1-java \
     vendor.qti.latency-V2.2-java \

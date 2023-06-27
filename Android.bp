@@ -188,6 +188,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "imssettings",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "uceShimService",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
@@ -202,6 +213,18 @@ android_app_import {
 	name: "dpmserviceapp",
 	owner: "asus",
 	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "ims",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -243,6 +266,55 @@ dex_import {
 }
 
 dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.3-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "com.quicinc.cne.api-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/com.quicinc.cne.api-V1.0-java.jar"],
@@ -274,6 +346,13 @@ dex_import {
 	name: "com.quicinc.cne.constants-V2.1-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "datachannellib",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/datachannellib.jar"],
 	system_ext_specific: true,
 }
 
@@ -540,6 +619,153 @@ dex_import {
 	name: "vendor.qti.hardware.slmadapter-V1.0-java",
 	owner: "asus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callcapability-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.configservice-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.configservice-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.connection-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.datachannelservice-V1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V2.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcssip-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcssip-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcssip-V1.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar"],
 	system_ext_specific: true,
 }
 
