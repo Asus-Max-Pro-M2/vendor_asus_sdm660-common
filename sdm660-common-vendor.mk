@@ -866,4 +866,5 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency-V2.1-java \
     vendor.qti.latency-V2.2-java \
     vendor.qti.voiceprint-V1.0-java \
-    manifest_android.hardware.drm@1.4-service.widevine
+    manifest_android.hardware.drm@1.4-service.widevine \
+    vendor.qti.gnss@4.0-service
